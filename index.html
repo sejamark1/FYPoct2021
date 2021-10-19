@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/sidebar_style.css">
+    <link rel="stylesheet" href="./style/taskbar_style.css">
+    <link rel="stylesheet" href="./style/topbar_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head> 
+  
+<body>
+  <main id="main"> 
+    <div id="side-bar"> 
+      <p class="side-text-detail logo"> TIMEly </p> 
+      <p class="side-text-detail p-name"> Nodlehs </p> 
+      <p class="side-text-detail p-name"> Sputnix </p> 
+
+
+      <div id="user-bar">
+        <button>Log out</button>
+        <button>Account</button>
+      </div>
+
+
+
+      <div id="bottom-side-bar">
+        <div id="user-image">
+          <img src="img/sheldon.jpg" alt="User Image">
+        </div>
+
+
+      </div>
+    </div> 
+
+    <div id="middle-bar">
+      <div id="top-bar"></div>
+      <div id="top-bar-detail">
+        <h6 class="col-title" style="
+    margin-left: 2%;
+">Project Name</h6>
+        <h6 class="col-title" style="margin-left: 14%;">Tasks Detail</h6>
+        <h6 class="col-title" style="
+    margin-left: 21%;
+    ">Due</h6>
+        <h6 class="col-title filter-priority" style="margin-left: 9%;">Priority
+          <div class="priority_dropdown">
+            <a class="priority-number" >1</a>
+            <a class="priority-number" >2</a>
+            <a class="priority-number" >3</a>
+            <a class="priority-number" >All</a>
+          </div>
+        </h6>
+        <h6 class="col-title" style="
+    margin-left: 11%;
+    ">Status</h6>
+        <h6 class="col-title" style="
+    margin-left: 14%;
+    ">Allocated</h6>
+        <h6 class="col-title" style="
+    margin-left: 4%;
+    ">Tags</h6>
+      </div>
+
+      <div id="task-bar">
+        <div class="project project-name">Nodlehs</div>
+        <div class="project project-detail project-detail-cover">We need a process that will track the inventory and status of components in the chassis. 
+          It should accept IPC requests from the various cards, maintain an internal database of what's currently available, 
+          respond to IPC queries from other components and have a CLI interface so that we can query its contents. We will be 
+          adding capabilities above and beyond this in the future.
+          </div>
+          <div class="project project-due">Tomorrow</div>
+          <div class="dot project project-priority">1</div>
+          <div class="project project-detail">
+            <input type="checkbox" id="task-done" name="scales" checked>
+        </div>       
+        <div id="task-belongs-to-user">
+          <img src="img/sheldon.jpg" alt="User Image"> 
+        </div>
+        <div id="task-belongs-to-username">
+          <div id="">sheldcooper93</div>  
+        </div>
+        <div id="project-tags">
+          <button id="btn_tags">Design</button>
+          <button id="btn_tags">Develop</button>
+        </div>
+
+      </div> 
+
+      <div id="task-bar">
+        <div class="project project-name">Nodlehs</div>
+        <div class="project project-detail project-detail-cover">We need a process that will track the inventory and status of components in the chassis. 
+          It should accept IPC requests from the various cards, maintain an internal database of what's currently available, 
+          respond to IPC queries from other components and have a CLI interface so that we can query its contents. We will be 
+          adding capabilities above and beyond this in the future.
+          </div>
+          <div class="project project-due">23 November 2021</div>
+          <div class="dot project project-priority">2</div>
+          <div class="project project-detail">
+           <input type="checkbox" id="task-done" name="scales">
+          </div>     
+          <div id="task-belongs-to-user">
+            <img src="img/sheldon.jpg" alt="User Image"> 
+          </div>
+          <div id="task-belongs-to-username">
+            <div id="">sheldcooper93</div>  
+          </div>  
+          <div id="project-tags">
+            <button id="btn_tags">Design</button>
+            <button id="btn_tags">Web</button>
+          </div>
+      </div> 
+
+      <div id="task-bar">
+        <div class="project project-name">Nodlehs</div>
+        <div class="project project-detail project-detail-cover">We need a process that will track the inventory and status of components in the chassis. 
+          It should accept IPC requests from the various cards, maintain an internal database of what's currently available, 
+          respond to IPC queries from other components and have a CLI interface so that we can query its contents. We will be 
+          adding capabilities above and beyond this in the future.
+          </div>
+          <div class="project project-due">22 January 2022</div>
+          <div class="dot project project-priority">1</div>
+          <div class="project project-detail">
+          <input type="checkbox" id="task-done" name="scales">
+        </div>       
+        <div id="task-belongs-to-user">
+          <img src="img/sheldon.jpg" alt="User Image"> 
+        </div>
+        <div id="task-belongs-to-username">
+          <div id="">sheldcooper93</div>  
+        </div>
+        <div id="project-tags">
+          <button id="btn_tags">Web</button>
+          <button id="btn_tags">Develop</button>
+        </div>
+      </div> 
+
+      <div id="task-bar">
+        <div class="project project-name">Nodlehs</div>
+        <div class="project project-detail project-detail-cover">We need a process that will track the inventory and status of components in the chassis. 
+          It should accept IPC requests from the various cards, maintain an internal database of what's currently available, 
+          respond to IPC queries from other components and have a CLI interface so that we can query its contents. We will be 
+          adding capabilities above and beyond this in the future.
+          </div>
+          <div class="project project-due">Tomorrow</div>
+          <div class="dot project project-priority">3</div>
+          <div class="project project-detail">
+          <input type="checkbox" id="task-done" name="scales">
+        </div>      
+        <div id="task-belongs-to-user">
+          <img src="img/grame.jpg" alt="User Image"> 
+        </div>
+        <div id="task-belongs-to-username">
+          <div id="">grame06545</div>  
+        </div> 
+        <div id="project-tags">
+          <button id="btn_tags">Web</button>
+          <button id="btn_tags">Research</button>
+        </div>
+      </div> 
+
+
+      <div id="task-bar">
+        <div class="project project-name">Nodlehs</div>
+        <div class="project project-detail project-detail-cover">We need a process that will track the inventory and status of components in the chassis. 
+          It should accept IPC requests from the various cards, maintain an internal database of what's currently available, 
+          respond to IPC queries from other components and have a CLI interface so that we can query its contents. We will be 
+          adding capabilities above and beyond this in the future.
+          </div>
+          <div class="project project-due">19 January 2022</div>
+          <div class="dot project project-priority">2</div>
+          <div class="project project-detail">
+          <input type="checkbox" id="task-done" name="scales">
+        </div>      
+        <div id="task-belongs-to-user">
+          <img src="img/sheldon.jpg" alt="User Image"> 
+        </div>
+        <div id="task-belongs-to-username">
+          <div id="">sheldcooper93</div>  
+        </div> 
+        <div id="project-tags">
+          <button id="btn_tags">Research</button>
+        </div>
+      </div> 
+
+      <div id="task-bar">
+        <div class="project project-name">Nodlehs</div>
+        <div class="project project-detail project-detail-cover">We need a process that will track the inventory and status of components in the chassis. 
+          It should accept IPC requests from the various cards, maintain an internal database of what's currently available, 
+          respond to IPC queries from other components and have a CLI interface so that we can query its contents. We will be 
+          adding capabilities above and beyond this in the future.
+          </div>
+          <div class="project project-due">1 December 2021</div>
+          <div class="dot project project-priority">1</div>
+          <div class="project project-detail">
+          <input type="checkbox" id="task-done" name="scales">
+        </div>  
+        <div id="task-belongs-to-user">
+          <img src="img/chan.jpg" alt="User Image"> 
+        </div>
+        <div id="task-belongs-to-username">
+          <div id="">sheldcooper93</div>  
+        </div>     
+        <div id="project-tags">
+          <button id="btn_tags">Design</button>
+          <button id="btn_tags">Research</button>
+        </div>
+      </div> 
+
+      <div id="progress-measure">
+        <label style="color: white" for="Progress">Progress</label>
+        <meter id="progress-meter" value="0" min="0" max="10"></meter><br>
+      </div>
+   
+
+      
+      
+    </div> 
+
+    
+    
+    
+
+    <script src="./js/app.js"></script>
+    <script src="./js/filtering.js"></script>
+
+  </main> 
+  
+  
+  
+  
+
+  
+  
+  
+
+</body>
+</html>
